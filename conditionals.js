@@ -68,9 +68,9 @@ function whichSchool(schoolAge){
 }
   
   // test conditions
-  console.log("I am 12. Whoch school should I go to?");
+  console.log("I am 12. Which school should I go to?");
   console.log(whichSchool(12));
-  console.log("I am 18. Whoch school should I go to?")
+  console.log("I am 18. Which school should I go to?")
   console.log(whichSchool(18));
-  console.log("I am 24. Whoch school should I go to?")
+  console.log("I am 24. Which school should I go to?")
   console.log(whichSchool(24));
