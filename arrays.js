@@ -35,6 +35,8 @@ let totals = bills.map(function(totals) {
 console.log(totals);
 
 //----------------------
+// looping - range challenge
+
 let range = function(start, end, step) {
   let array = [start];
 
@@ -54,3 +56,37 @@ console.log(range(2,10,2));
 console.log(range(0, 10, 2));
 console.log(range(10, 30, 5));
 console.log(range(-5, 2, 3));
+
+
+//Looping - lastIndexOf Challenge
+let lastIndexOf = function(arr, val) {
+  let lastIndex;
+  
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === val){
+      lastIndex = i;
+    }
+  }
+
+  if (lastIndex === undefined){
+    return -1;
+  }else {
+    return lastIndex;
+  }
+}
+
+console.log(lastIndexOf([3,4,5], 3));
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
+console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
+console.log(lastIndexOf([], 3), "=?", -1);
+
+
+//Concatenate arrays challenge
+let concat = (arr1, arr2) => [...arr1, ...arr2];
+
+console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
+console.log(concat([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);
+console.log(concat([], [ 9, 7, 2 ]), "=?", [ 9, 7, 2 ]);
+console.log(concat([ 5, 10 ], []), "=?", [ 5, 10 ]);
