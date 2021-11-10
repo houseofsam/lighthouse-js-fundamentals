@@ -72,7 +72,7 @@ let judgeVegetable = function(vegetables, metric) {
 
 console.log(judgeVegetable(vegetables, metric));
 
-function judgeVegetablee() {
+function judgeVegetable2() {
   let score = 0;
   let winner;
   for (let object of vegetables){
