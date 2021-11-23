@@ -24,7 +24,7 @@ let loopyLighthouse = function(range, multiples, words) {
     !(i % multiples[0]) ? output += words[0] : ''; //if divisible by 1st number, add it to output
     !(i % multiples[1]) ? output += words[1] : ''; //if divisible by 2nd number, add it to output (as well)
 
-    // Is there a true output? If so print it out, else just print the number.
+    // Is there a true output (ie. was anything added to output)? If so print it out, else just print the index number.
     console.log(output ? output : i);
   }
 };
